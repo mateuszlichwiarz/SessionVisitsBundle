@@ -1,10 +1,10 @@
-# BSFSessionVisitsBundle
+# SessionVisitsBundle
 
-BSFSessionVisitsBundle is a tool based on Symfony/http-foundation sessions
+SessionVisitsBundle is a tool based on Symfony/http-foundation sessions
 
 ## Contain
-- BetterDateSystem
-- SimpleVisitsRegister
-- FastVisitsFinder(experimental)
+- DateSystem
+- VisitsRegister
+- VisitsFinder(experimental)
 
 ## Features
