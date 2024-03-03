@@ -50,3 +50,32 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+docs
+
+frankenphp
+
+workflows
+
+.dockerignore
+
+.editorconfig
+
+.gitattributes
+
+compose.override.yaml
+
+compose.prod.yaml
+
+compose.yaml
+
+Dockerfile
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
