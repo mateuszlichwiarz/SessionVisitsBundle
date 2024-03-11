@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\DateSystem\Factory;
+namespace MLD\SessionVisitsBundle\Factory;
 
-use App\DateSystem\Factory\Interface\CustomDateFactoryInterface as DateFactoryInterface;
-use App\DateSystem\Entity\Date;
+use MLD\SessionVisitsBundle\Factory\Interface\CustomDateFactoryInterface as DateFactoryInterface;
+use MLD\SessionVisitsBundle\Entity\Date;
 
 use DateTime;
 
