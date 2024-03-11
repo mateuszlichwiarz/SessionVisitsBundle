@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\DateSystem;
+namespace MLD\SessionVisitsBundle;
 
-use App\DateSystem\Entity\Date;
+use MLD\SessionVisitsBundle\Entity\Date;
 
 interface DateSystemInterface
 {
