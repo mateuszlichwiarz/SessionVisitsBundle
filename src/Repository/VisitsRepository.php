@@ -8,7 +8,7 @@ use MLD\SessionVisitsBundle\Entity\Visits;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
-use MLD\SessionVisitsBundle\DateSystem\Entity\Date;
+use MLD\SessionVisitsBundle\Entity\Date;
 
 /**
  * @extends ServiceEntityRepository<Visits>
