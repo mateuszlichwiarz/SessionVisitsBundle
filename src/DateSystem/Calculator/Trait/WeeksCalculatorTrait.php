@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\DateSystem\Entity\Trait;
+namespace MLD\SessionVisitsBundle\DateSystem\Calculator\Trait;
 
 trait WeeksCalculatorTrait
 {
