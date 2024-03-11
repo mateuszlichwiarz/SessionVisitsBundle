@@ -2,11 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\DateSystem\Entity;
+namespace MLD\SessionVisitsBundle\Entity;
 
+use MLD\SessionVisitsBundle\DateSystem\Calculator\Trait\WeeksCalculatorTrait;
 use DateTime;
-
-use App\DateSystem\Entity\Trait\WeeksCalculatorTrait;
 
 class Date
 {
