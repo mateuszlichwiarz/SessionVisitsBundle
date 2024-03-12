@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\VisitsFinder\TestCase;
+namespace MLD\SessionVisitsBundle\Tests\VisitsFinder\TestCase;
 
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
-use App\Repository\VisitsRepository;
+use MLD\SessionVisitsBundle\Repository\VisitsRepository;
 
-use App\BetterDate\BetterDateInterface;
+use MLD\SessionVisitsBundle\dateSystem\dateSystemInterface;
 
 abstract class VisitsFinderKernelTestCase extends KernelTestCase
 {
@@ -16,12 +16,12 @@ abstract class VisitsFinderKernelTestCase extends KernelTestCase
 
     protected VisitsRepository $visitsRepository;
 
-    protected BetterDateInterface $betterDate;
+    protected dateSystemInterface $dateSystem;
 
     public function setUp(): void
     {
         self::bootKernel();
-        $this->betterDate = self::getContainer()->get(BetterDateInterface::class);
+        $this->dateSystem = self::getContainer()->get(dateSystemInterface::class);
         $this->setUpVisitsRepository();
         $this->setUpVisitsCollection();
     }

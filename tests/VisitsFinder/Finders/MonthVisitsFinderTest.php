@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\VisitsFinder\Finders;
+namespace MLD\SessionVisitsBundle\Tests\VisitsFinder\Finders;
 
-use App\Tests\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
+use MLD\SessionVisitsBundle\Tests\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
 
-use App\BetterDate\Entity\Date;
+use MLD\SessionVisitsBundle\Entity\Date;
 
-use App\VisitsFinder\Factory\MonthVisitsFinderFactory;
+use MLD\SessionVisitsBundle\VisitsFinder\Factory\MonthVisitsFinderFactory;
 
 final class MonthVisitsFinderTest extends VisitsFinderKernelTestCase
 {
@@ -19,7 +19,7 @@ final class MonthVisitsFinderTest extends VisitsFinderKernelTestCase
     public function setUp(): void
     {
         parent::setUp();
-        $this->date = $this->betterDate->create();
+        $this->date = $this->dateSystem->create();
         $this->setUpVisitsFound();
     }
 

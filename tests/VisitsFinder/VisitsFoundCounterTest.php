@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\VisitsFinder;
+namespace MLD\SessionVisitsBundle\Tests\VisitsFinder;
 
-use App\Tests\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
+use MLD\SessionVisitsBundle\Tests\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
 
-use App\BetterDate\Entity\Date;
+use MLD\SessionVisitsBundle\Entity\Date;
 
-use App\VisitsFinder\VisitsFinderInterface;
-use App\VisitsFinder\VisitsFoundCounter;
-use App\Entity\Visits;
+use MLD\SessionVisitsBundle\VisitsFinder\VisitsFinderInterface;
+use MLD\SessionVisitsBundle\VisitsFinder\VisitsFoundCounter;
+use MLD\SessionVisitsBundle\Entity\Visits;
 
-use App\Repository\VisitsRepository;
+use MLD\SessionVisitsBundle\Repository\VisitsRepository;
 
 class VisitsFoundCounterTest extends VisitsFinderKernelTestCase
 {
@@ -31,7 +31,7 @@ class VisitsFoundCounterTest extends VisitsFinderKernelTestCase
     public function setUp(): void
     {
         parent::setUp();
-        $this->date = $this->betterDate->create('01-01-2022');
+        $this->date = $this->dateSystem->create('01-01-2022');
         $this->setUpProperVisitsCount();
         $this->setUpVisitsFound();
 

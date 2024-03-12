@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\VisitsFinder\Factory;
+namespace MLD\SessionVisitsBundle\Tests\VisitsFinder\Factory;
 
-use App\Tests\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
+use MLD\SessionVisitsBundle\Tests\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
 
-use App\BetterDate\Factory\CurrentDateFactory;
-use App\BetterDate\Entity\Date;
+use MLD\SessionVisitsBundle\DateSystem\Factory\CurrentDateFactory;
+use MLD\SessionVisitsBundle\Entity\Date;
 
-use App\VisitsFinder\Factory\WeekVisitsFinderFactory;
-use App\VisitsFinder\Finders\WeekVisitsFinder;
+use MLD\SessionVisitsBundle\VisitsFinder\Factory\WeekVisitsFinderFactory;
+use MLD\SessionVisitsBundle\VisitsFinder\Finders\WeekVisitsFinder;
 
-use App\VisitsFinder\Factory\MonthVisitsFinderFactory;
-use App\VisitsFinder\Finders\MonthVisitsFinder;
+use MLD\SessionVisitsBundle\VisitsFinder\Factory\MonthVisitsFinderFactory;
+use MLD\SessionVisitsBundle\VisitsFinder\Finders\MonthVisitsFinder;
 
-use App\VisitsFinder\Factory\YearVisitsFinderFactory;
-use App\VisitsFinder\Finders\YearVisitsFinder;
+use MLD\SessionVisitsBundle\VisitsFinder\Factory\YearVisitsFinderFactory;
+use MLD\SessionVisitsBundle\VisitsFinder\Finders\YearVisitsFinder;
 
 final class VisitsFinderFactoryTest extends VisitsFinderKernelTestCase
 {
