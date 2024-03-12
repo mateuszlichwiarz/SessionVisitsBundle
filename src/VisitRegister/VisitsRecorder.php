@@ -11,7 +11,7 @@ use MLD\SessionVisitsBundle\Repository\VisitsRepository;
 use MLD\SessionVisitsBundle\Entity\Visits;
 
 use MLD\SessionVisitsBundle\Entity\Date;
-use MLD\SessionVisitsBundle\Factory\CurrentDateFactory;
+use MLD\SessionVisitsBundle\DateSystem\Factory\CurrentDateFactory;
 
 class VisitsRecorder
 {
