@@ -23,14 +23,14 @@ class DateSystemTest extends DateSystemKernelTestCase
     {
         $this->assertInstanceOf(
             Date::class,
-            $this->betterDate->create()
+            $this->dateSystem->create()
         );
     }
 
     public function testCurrentDate(): void
     {
         $this->assertEquals(
-            $this->betterDate->create()->getWeek(),
+            $this->dateSystem->create()->getWeek(),
             $this->properCurrentDate->getWeek()
         );
     }
@@ -39,13 +39,13 @@ class DateSystemTest extends DateSystemKernelTestCase
     {
         $this->assertInstanceOf(
             Date::class,
-            $this->betterDate->create('14-02-2006')
+            $this->dateSystem->create('14-02-2006')
         );
     }
 
     public function testCustomDateAsserts(): void
     {
-        $date = $this->betterDate->create('14-02-2006');
+        $date = $this->dateSystem->create('14-02-2006');
         $this->assertEquals($date->getWeek(),2);
         $this->assertEquals($date->getMonth(), 2);
         $this->assertEquals($date->getYear(), 2006);
