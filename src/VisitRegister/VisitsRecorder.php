@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace App\VisitRegister;
+namespace MLD\SessionVisitsBundle\VisitRegister;
 
-use App\VisitRegister\VisitFactory;
-use App\VisitRegister\VisitsUpdater;
-use App\VisitRegister\Persister\VisitPersister;
-use App\Repository\VisitsRepository;
-use App\Entity\Visits;
+use MLD\SessionVisitsBundle\VisitRegister\VisitFactory;
+use MLD\SessionVisitsBundle\VisitRegister\VisitsUpdater;
+use MLD\SessionVisitsBundle\VisitRegister\Persister\VisitPersister;
+use MLD\SessionVisitsBundle\Repository\VisitsRepository;
+use MLD\SessionVisitsBundle\Entity\Visits;
 
-use App\BetterDate\Entity\Date;
-use App\BetterDate\Factory\CurrentDateFactory;
+use MLD\SessionVisitsBundle\Entity\Date;
+use MLD\SessionVisitsBundle\Factory\CurrentDateFactory;
 
 class VisitsRecorder
 {

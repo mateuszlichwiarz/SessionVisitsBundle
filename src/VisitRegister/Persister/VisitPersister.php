@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\VisitRegister\Persister;
+namespace MLD\SessionVisitsBundle\VisitRegister\Persister;
 
 use Doctrine\ORM\EntityManagerInterface;
-use App\Entity\Visits;
+use MLD\SessionVisitsBundle\Entity\Visits;
 
 
 class VisitPersister
