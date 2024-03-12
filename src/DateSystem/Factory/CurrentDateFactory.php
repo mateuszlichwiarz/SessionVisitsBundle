@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Factory;
+namespace MLD\SessionVisitsBundle\DateSystem\Factory;
 
-use MLD\SessionVisitsBundle\Factory\Interface\DateFactoryInterface;
+use MLD\SessionVisitsBundle\DateSystem\Factory\Interface\DateFactoryInterface;
 use MLD\SessionVisitsBundle\Entity\Date;
 
 use DateTime;

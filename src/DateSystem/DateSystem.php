@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle;
+namespace MLD\SessionVisitsBundle\DateSystem;
 
 use MLD\SessionVisitsBundle\Entity\Date;
-use MLD\SessionVisitsBundle\Factory\CurrentDateFactory;
-use MLD\SessionVisitsBundle\Factory\CustomDateFactory;
-use MLD\SessionVisitsBundle\Factory\Interface\CustomDateFactoryInterface;
-use MLD\SessionVisitsBundle\Factory\Interface\DateFactoryInterface;
+use MLD\SessionVisitsBundle\DateSystem\Factory\CurrentDateFactory;
+use MLD\SessionVisitsBundle\DateSystem\Factory\CustomDateFactory;
+use MLD\SessionVisitsBundle\DateSystem\Factory\Interface\CustomDateFactoryInterface;
+use MLD\SessionVisitsBundle\DateSystem\Factory\Interface\DateFactoryInterface;
 
-use MLD\SessionVisitsBundle\DateSystemInterface;
+use MLD\SessionVisitsBundle\DateSystem\DateSystemInterface;
 
 class DateSystem implements DateSystemInterface
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle;
+namespace MLD\SessionVisitsBundle\DateSystem;
 
 use MLD\SessionVisitsBundle\Entity\Date;
 
