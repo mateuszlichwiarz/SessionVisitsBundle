@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\VisitsFinder;
+namespace MLD\SessionVisitsBundle\VisitsFinder;
 
-use App\BetterDate\Entity\Date;
-use App\Entity\Visits;
+use MLD\SessionVisitsBundle\Entity\Date;
+use MLD\SessionVisitsBundle\Entity\Visits;
 
 interface VisitsFinderInterface
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\VisitsFinder\Finders\Interface;
+namespace MLD\SessionVisitsBundle\VisitsFinder\Finders\Interface;
 
 interface VisitsFinderInterface
 {

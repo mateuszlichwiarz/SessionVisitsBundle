@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\VisitsFinder\Finders;
+namespace MLD\SessionVisitsBundle\VisitsFinder\Finders;
 
-use App\VisitsFinder\Finders\Interface\OneResultVisitsFinderInterface as VisitsFinderInterface;
-use App\BetterDate\Entity\Date;
-use App\Entity\Visits;
+use MLD\SessionVisitsBundle\VisitsFinder\Finders\Interface\OneResultVisitsFinderInterface as VisitsFinderInterface;
+use MLD\SessionVisitsBundle\Entity\Date;
+use MLD\SessionVisitsBundle\Entity\Visits;
 
 final class WeekVisitsFinder implements VisitsFinderInterface
 {

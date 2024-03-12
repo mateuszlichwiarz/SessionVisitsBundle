@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\VisitsFinder\Finders\Interface;
+namespace MLD\SessionVisitsBundle\VisitsFinder\Finders\Interface;
 
-use App\Entity\Visits;
+use MLD\SessionVisitsBundle\Entity\Visits;
 
 interface OneResultVisitsFinderInterface extends VisitsFinderInterface
 {

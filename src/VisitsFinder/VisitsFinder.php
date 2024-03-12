@@ -1,13 +1,13 @@
 <?php
 
-namespace App\VisitsFinder;
+namespace MLD\SessionVisitsBundle\VisitsFinder;
 
-use App\Entity\Visits;
+use MLD\SessionVisitsBundle\Entity\Visits;
 
-use App\VisitsFinder\Factory\VisitsFinderFactoryInterface;
-use App\VisitsFinder\VisitsFinderInterface;
+use MLD\SessionVisitsBundle\VisitsFinder\Factory\VisitsFinderFactoryInterface;
+use MLD\SessionVisitsBundle\VisitsFinder\VisitsFinderInterface;
 
-use App\BetterDate\Entity\Date;
+use MLD\SessionVisitsBundle\Entity\Date;
 
 class VisitsFinder implements VisitsFinderInterface
 {
