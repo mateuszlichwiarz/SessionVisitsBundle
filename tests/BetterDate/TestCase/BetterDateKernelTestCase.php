@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\BetterDate\TestCase;
+namespace MLD\SessionVisitsBundle\Tests\BetterDate\TestCase;
 
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
-use App\BetterDate\BetterDateInterface;
+use MLD\SessionVisitsBundle\BetterDateInterface;
 
 abstract class BetterDateKernelTestCase extends KernelTestCase
 {

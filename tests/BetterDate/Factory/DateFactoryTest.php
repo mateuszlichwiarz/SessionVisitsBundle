@@ -6,9 +6,9 @@ namespace MLD\SessionVisitsBundle\Tests\BetterDate\Factory;
 
 use PHPUnit\Framework\TestCase;
 
-use App\BetterDate\Factory\CustomDateFactory;
-use App\BetterDate\Factory\CurrentDateFactory;
-use App\BetterDate\Entity\Date;
+use MLD\SessionVisitsBundle\Factory\CustomDateFactory;
+use MLD\SessionVisitsBundle\Factory\CurrentDateFactory;
+use MLD\SessionVisitsBundle\Entity\Date;
 
 final class DateFactoryTest extends TestCase
 {

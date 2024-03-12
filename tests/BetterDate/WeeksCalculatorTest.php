@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Tests\BetterDate;
+namespace MLD\SessionVisitsBundle\Tests\BetterDate;
 
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
-use App\BetterDate\CurrentDate\CurrentDateFactory;
-use App\BetterDate\Entity\Trait\WeeksCalculatorTrait;
+use MLD\SessionVisitsBundle\DateSystem\Calculator\Trait\WeeksCalculatorTrait;
 
 final class DateTest extends KernelTestCase
 {

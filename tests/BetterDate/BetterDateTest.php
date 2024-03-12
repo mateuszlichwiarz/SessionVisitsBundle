@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\BetterDate;
+namespace MLD\SessionVisitsBundle\Tests\BetterDate;
 
-use App\Tests\BetterDate\TestCase\BetterDateKernelTestCase;
+use MLD\SessionVisitsBundle\Tests\BetterDate\TestCase\BetterDateKernelTestCase;
 
-use App\BetterDate\Factory\CurrentDateFactory;
-use App\BetterDate\Entity\Date;
+use MLD\SessionVisitsBundle\Factory\CurrentDateFactory;
+use MLD\SessionVisitsBundle\Entity\Date;
 
 class BetterDateTest extends BetterDateKernelTestCase
 {

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\BetterDate;
+namespace MLD\SessionVisitsBundle\Tests\BetterDate;
 
 use PHPUnit\Framework\TestCase;
 
-use App\BetterDate\Factory\CustomDateFactory;
-use App\BetterDate\Entity\Date;
+use MLD\SessionVisitsBundle\Factory\CustomDateFactory;
+use MLD\SessionVisitsBundle\Entity\Date;
 
 final class CustomDateTest extends TestCase
 {
