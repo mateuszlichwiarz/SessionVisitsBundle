@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Tests\BetterDate;
+namespace MLD\SessionVisitsBundle\Tests\DateSystem;
 
-use MLD\SessionVisitsBundle\Tests\BetterDate\TestCase\BetterDateKernelTestCase;
+use MLD\SessionVisitsBundle\Tests\DateSystem\TestCase\DateSystemKernelTestCase;
 
-use MLD\SessionVisitsBundle\Factory\CurrentDateFactory;
+use MLD\SessionVisitsBundle\DateSystem\Factory\CurrentDateFactory;
 use MLD\SessionVisitsBundle\Entity\Date;
 
-class BetterDateTest extends BetterDateKernelTestCase
+class DateSystemTest extends DateSystemKernelTestCase
 {
     private Date $properCurrentDate;
 

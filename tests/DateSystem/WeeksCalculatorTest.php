@@ -1,6 +1,6 @@
 <?php
 
-namespace MLD\SessionVisitsBundle\Tests\BetterDate;
+namespace MLD\SessionVisitsBundle\Tests\DateSystem;
 
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
