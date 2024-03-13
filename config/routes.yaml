@@ -1,3 +1,3 @@
 mld_session_visits_bundle.routes:
-  type: annotation
-  resource: '../src'
+    type: annotation
+    resource: '../src/controller/SessionVisitsController'
