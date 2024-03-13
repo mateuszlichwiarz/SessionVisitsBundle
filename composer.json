@@ -2,10 +2,10 @@
     "name": "mld/session-visits-bundle",
     "version": "0.1.0",
     "type": "symfony-bundle",
-    "description": "This bundle track visits by Symfony-Sessions and persist in db.",
+    "description": "This bundle tracking visits by Symfony-Sessions and persist in db.",
     "license": "MIT",
     "require": {
-        "php": ">=8.3"
+        "php": ">=8.2"
     },
     "autoload": {
         "psr-4": {
