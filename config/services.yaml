@@ -5,12 +5,6 @@ services:
         autowire: true
         autoconfigure: true
 
-    MLD\SessionVisitsBundle\:
-        resource: '../src/'
-        exclude:
-            - '../src/DependencyInjection/'
-            - '../src/Entity/'
-            - '../src/Kernel.php'
-
+    MLD\SessionVisitsBundle\Controller\SessionVisitsController: ~
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
