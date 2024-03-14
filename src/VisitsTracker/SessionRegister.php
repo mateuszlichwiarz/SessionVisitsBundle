@@ -10,7 +10,7 @@ class SessionRegister
 {
     public function __construct(
         private RequestStack $requestStack
-        ){}
+    ){}
 
     public function register(): void
     {
