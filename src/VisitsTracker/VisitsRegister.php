@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\VisitRegister;
+namespace MLD\SessionVisitsBundle\VisitsTracker;
 
 use Symfony\Component\HttpFoundation\RequestStack;
 
-use MLD\SessionVisitsBundle\VisitRegister\SessionRegister;
-use MLD\SessionVisitsBundle\VisitRegister\VisitsRecorder;
+use MLD\SessionVisitsBundle\VisitsTracker\SessionRegister;
+use MLD\SessionVisitsBundle\VisitsTracker\VisitsRecorder;
 
 class VisitsRegister
 {

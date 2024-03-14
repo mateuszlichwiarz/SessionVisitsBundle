@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace MLD\SessionVisitsBundle\Controller;
 
-use MLD\SessionVisitsBundle\VisitRegister\VisitsRegister;
+use MLD\SessionVisitsBundle\VisitsTracker\VisitsRegister;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class SessionVisitsController extends AbstractController

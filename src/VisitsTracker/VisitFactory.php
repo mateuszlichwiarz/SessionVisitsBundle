@@ -2,7 +2,7 @@
 
 declare(strict_types= 1);
 
-namespace MLD\SessionVisitsBundle\VisitRegister;
+namespace MLD\SessionVisitsBundle\VisitsTracker;
 
 use MLD\SessionVisitsBundle\Entity\Visits;
 

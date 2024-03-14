@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\VisitRegister;
+namespace MLD\SessionVisitsBundle\VisitsTracker;
 
-use MLD\SessionVisitsBundle\VisitRegister\VisitFactory;
-use MLD\SessionVisitsBundle\VisitRegister\VisitsUpdater;
-use MLD\SessionVisitsBundle\VisitRegister\Persister\VisitPersister;
+use MLD\SessionVisitsBundle\VisitsTracker\VisitFactory;
+use MLD\SessionVisitsBundle\VisitsTracker\VisitsUpdater;
+use MLD\SessionVisitsBundle\VisitsTracker\Persister\VisitPersister;
 use MLD\SessionVisitsBundle\Repository\VisitsRepository;
 use MLD\SessionVisitsBundle\Entity\Visits;
 
