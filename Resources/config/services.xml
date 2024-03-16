@@ -5,12 +5,12 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="mld_session_visits_register" class="MLD\SessionVisitsBundle\VisitsTracker\VisitsRegister">
+        <service id="mld_session_visits_register" class="MLD\SessionVisitsBundle\Component\VisitsTracker\VisitsRegister">
             <argument key="$requestStack" type="service" id="request_stack" />
             <argument key="$sessionRegister" type="service" id="mld_session_register" />
             <argument key="$visitsRecorder" type="service" id="mld_visits_recorder" />
         </service>
-        <service id="mld_visits_recorder" class="MLD\SessionVisitsBundle\VisitsTracker\VisitsRecorder">
+        <service id="mld_visits_recorder" class="MLD\SessionVisitsBundle\Component\VisitsTracker\VisitsRecorder">
             <argument key="$visitsRepository" type="service" id="mld_visits_repository" />
             <argument key="$visitFactory" type="service" id="mld_visit_factory" />
             <argument key="$visitsUpdater" type="service" id="mld_visits_updater" />
@@ -18,7 +18,7 @@
             <argument key="$currentDateFactory" type="service" id="mld_current_date_factory" />
         </service>
 
-        <service id="mld_session_register" class="MLD\SessionVisitsBundle\VisitsTracker\SessionRegister">
+        <service id="mld_session_register" class="MLD\SessionVisitsBundle\Component\VisitsTracker\SessionRegister">
             <argument key="$requestStack" type="service" id="request_stack" />
         </service>
 
@@ -26,7 +26,7 @@
             <argument key="$registry" type="service" id="doctrine" />
         </service>
 
-        <service id="mld_visit_persister" class="MLD\SessionVisitsBundle\VisitsTracker\Persister\VisitPersister">
+        <service id="mld_visit_persister" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Persister\VisitPersister">
             <argument key="$manager" type="service" id="doctrine.orm.default_entity_manager" />
         </service>
 
@@ -34,18 +34,18 @@
             <argument key="$visitsRegister" type="service" id="mld_session_visits_register" />
         </service>
 
-        <service id="mld_visit_factory" class="MLD\SessionVisitsBundle\VisitsTracker\VisitFactory" />
-        <service id="mld_visits_updater" class="MLD\SessionVisitsBundle\VisitsTracker\VisitsUpdater" />
+        <service id="mld_visit_factory" class="MLD\SessionVisitsBundle\Component\VisitsTracker\VisitFactory" />
+        <service id="mld_visits_updater" class="MLD\SessionVisitsBundle\Component\VisitsTracker\VisitsUpdater" />
         <service id="mld_current_date_factory" class="MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory" />
 
         <service id="MLD\SessionVisitsBundle\Controller\SessionVisitsController" alias="mld_session_visits_controller" />
-        <service id="MLD\SessionVisitsBundle\VisitsTracker\VisitsRegister" alias="mld_session_visits_register" />
-        <service id="MLD\SessionVisitsBundle\VisitsTracker\SessionRegister" alias="mld_session_register" />
-        <service id="MLD\SessionVisitsBundle\VisitsTracker\VisitsRecorder" alias="mld_visits_recorder" />
+        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\VisitsRegister" alias="mld_session_visits_register" />
+        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\SessionRegister" alias="mld_session_register" />
+        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\VisitsRecorder" alias="mld_visits_recorder" />
         <service id="MLD\SessionVisitsBundle\Repository\VisitsRepository" alias="mld_visits_repository" />
-        <service id="MLD\SessionVisitsBundle\VisitsTracker\VisitFactory" alias="mld_visit_factory" />
-        <service id="MLD\SessionVisitsBundle\VisitsTracker\VisitsUpdater" alias="mld_visits_updater" />
-        <service id="MLD\SessionVisitsBundle\VisitsTracker\Persister\VisitPersister" alias="mld_visit_persister" />
+        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\VisitFactory" alias="mld_visit_factory" />
+        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\VisitsUpdater" alias="mld_visits_updater" />
+        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Persister\VisitPersister" alias="mld_visit_persister" />
         <service id="MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory" alias="mld_current_date_factory" />
     </services>
 </container>
