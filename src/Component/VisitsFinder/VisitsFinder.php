@@ -1,11 +1,11 @@
 <?php
 
-namespace MLD\SessionVisitsBundle\VisitsFinder;
+namespace MLD\SessionVisitsBundle\Component\VisitsFinder;
 
 use MLD\SessionVisitsBundle\Entity\Visits;
 
-use MLD\SessionVisitsBundle\VisitsFinder\Factory\VisitsFinderFactoryInterface;
-use MLD\SessionVisitsBundle\VisitsFinder\VisitsFinderInterface;
+use MLD\SessionVisitsBundle\Component\VisitsFinder\Factory\VisitsFinderFactoryInterface;
+use MLD\SessionVisitsBundle\Component\VisitsFinder\VisitsFinderInterface;
 
 use MLD\SessionVisitsBundle\Entity\Date;
 

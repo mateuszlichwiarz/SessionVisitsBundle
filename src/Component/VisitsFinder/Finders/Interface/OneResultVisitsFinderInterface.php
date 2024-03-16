@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\VisitsFinder\Finders\Interface;
+namespace MLD\SessionVisitsBundle\Component\VisitsFinder\Finders\Interface;
 
 use MLD\SessionVisitsBundle\Entity\Visits;
 

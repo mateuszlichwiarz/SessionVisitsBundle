@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\VisitsFinder\Finders;
+namespace MLD\SessionVisitsBundle\Component\VisitsFinder\Finders;
 
-use MLD\SessionVisitsBundle\VisitsFinder\Finders\Interface\OneResultVisitsFinderInterface as VisitsFinderInterface;
+use MLD\SessionVisitsBundle\Component\VisitsFinder\Finders\Interface\OneResultVisitsFinderInterface as VisitsFinderInterface;
 use MLD\SessionVisitsBundle\Entity\Date;
 use MLD\SessionVisitsBundle\Entity\Visits;
 

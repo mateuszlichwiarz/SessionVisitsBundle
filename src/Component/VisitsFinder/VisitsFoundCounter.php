@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\VisitsFinder;
+namespace MLD\SessionVisitsBundle\Component\VisitsFinder;
 
 class VisitsFoundCounter
 {

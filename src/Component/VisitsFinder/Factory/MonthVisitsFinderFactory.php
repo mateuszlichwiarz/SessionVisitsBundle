@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\VisitsFinder\Factory;
+namespace MLD\SessionVisitsBundle\Component\VisitsFinder\Factory;
 
-use MLD\SessionVisitsBundle\VisitsFinder\Factory\VisitsFinderFactoryInterface;
-use MLD\SessionVisitsBundle\VisitsFinder\Finders\MonthVisitsFinder;
+use MLD\SessionVisitsBundle\Component\VisitsFinder\Factory\VisitsFinderFactoryInterface;
+use MLD\SessionVisitsBundle\Component\VisitsFinder\Finders\MonthVisitsFinder;
 use MLD\SessionVisitsBundle\Entity\Date;
-use MLD\SessionVisitsBundle\VisitsFinder\Finders\Interface\VisitsFinderInterface;
+use MLD\SessionVisitsBundle\Component\VisitsFinder\Finders\Interface\VisitsFinderInterface;
 
 final class MonthVisitsFinderFactory implements VisitsFinderFactoryInterface
 {
