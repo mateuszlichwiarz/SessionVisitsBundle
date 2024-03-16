@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\VisitsTracker\Updater;
+namespace MLD\SessionVisitsBundle\Component\VisitsTracker\Updater;
 
 use MLD\SessionVisitsBundle\Entity\Visits;
 

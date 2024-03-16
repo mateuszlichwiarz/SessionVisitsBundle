@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\VisitsTracker;
+namespace MLD\SessionVisitsBundle\Component\VisitsTracker;
 
-use MLD\SessionVisitsBundle\VisitsTracker\Session\SessionRegister;
-use MLD\SessionVisitsBundle\VisitsTracker\Resolver\VisitsSaveResolver;
+use MLD\SessionVisitsBundle\Component\VisitsTracker\Session\SessionRegister;
+use MLD\SessionVisitsBundle\Component\VisitsTracker\Resolver\VisitsSaveResolver;
 
 class VisitsTracker
 {

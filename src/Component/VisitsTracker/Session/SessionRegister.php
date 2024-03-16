@@ -2,7 +2,7 @@
 
 declare(strict_types= 1);
 
-namespace MLD\SessionVisitsBundle\VisitsTracker\Session;
+namespace MLD\SessionVisitsBundle\Component\VisitsTracker\Session;
 
 use Symfony\Component\HttpFoundation\RequestStack;
 

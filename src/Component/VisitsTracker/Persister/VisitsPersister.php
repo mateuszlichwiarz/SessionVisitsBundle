@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\VisitsTracker\Persister;
+namespace MLD\SessionVisitsBundle\Component\VisitsTracker\Persister;
 
 use Doctrine\ORM\EntityManagerInterface;
 use MLD\SessionVisitsBundle\Entity\Visits;
