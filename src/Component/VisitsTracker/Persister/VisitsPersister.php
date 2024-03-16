@@ -8,7 +8,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use MLD\SessionVisitsBundle\Entity\Visits;
 
 
-class VisitPersister
+class VisitsPersister
 {
     public function __construct(private EntityManagerInterface $manager)
     {}
