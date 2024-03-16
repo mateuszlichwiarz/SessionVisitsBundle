@@ -30,10 +30,6 @@
             <argument key="$manager" type="service" id="doctrine.orm.default_entity_manager" />
         </service>
 
-        <service id="mld_session_visits_controller" class="MLD\SessionVisitsBundle\Controller\SessionVisitsController">
-            <argument key="$visitsRegister" type="service" id="mld_session_visits_register" />
-        </service>
-
         <service id="mld_visit_factory" class="MLD\SessionVisitsBundle\Component\VisitsTracker\VisitFactory" />
         <service id="mld_visits_updater" class="MLD\SessionVisitsBundle\Component\VisitsTracker\VisitsUpdater" />
         <service id="mld_current_date_factory" class="MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory" />
