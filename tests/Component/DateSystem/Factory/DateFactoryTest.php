@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Tests\DateSystem\Factory;
+namespace MLD\SessionVisitsBundle\Tests\Component\DateSystem\Factory;
 
 use PHPUnit\Framework\TestCase;
 
-use MLD\SessionVisitsBundle\DateSystem\Factory\CustomDateFactory;
-use MLD\SessionVisitsBundle\DateSystem\Factory\CurrentDateFactory;
+use MLD\SessionVisitsBundle\Component\DateSystem\Factory\CustomDateFactory;
+use MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
 use MLD\SessionVisitsBundle\Entity\Date;
 
 final class DateFactoryTest extends TestCase

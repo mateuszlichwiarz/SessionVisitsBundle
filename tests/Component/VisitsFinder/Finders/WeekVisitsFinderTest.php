@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Tests\VisitsFinder\Finders;
+namespace MLD\SessionVisitsBundle\Tests\Component\VisitsFinder\Finders;
 
-use MLD\SessionVisitsBundle\Tests\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
+use MLD\SessionVisitsBundle\Tests\Component\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
 
 use MLD\SessionVisitsBundle\Entity\Date;
 
 use MLD\SessionVisitsBundle\Entity\Visits;
-use MLD\SessionVisitsBundle\VisitsFinder\Factory\WeekVisitsFinderFactory;
+use MLD\SessionVisitsBundle\Component\VisitsFinder\Factory\WeekVisitsFinderFactory;
 
 final class WeekVisitsFinderTest extends VisitsFinderKernelTestCase
 {

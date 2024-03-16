@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Tests\DateSystem;
+namespace MLD\SessionVisitsBundle\Tests\Component\DateSystem;
 
-use MLD\SessionVisitsBundle\Tests\DateSystem\TestCase\DateSystemKernelTestCase;
+use MLD\SessionVisitsBundle\Tests\Component\DateSystem\TestCase\DateSystemKernelTestCase;
 
-use MLD\SessionVisitsBundle\DateSystem\Factory\CurrentDateFactory;
+use MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
 use MLD\SessionVisitsBundle\Entity\Date;
 
 class DateSystemTest extends DateSystemKernelTestCase

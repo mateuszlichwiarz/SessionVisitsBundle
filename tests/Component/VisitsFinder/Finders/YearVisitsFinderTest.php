@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Tests\VisitsFinder\Finders;
+namespace MLD\SessionVisitsBundle\Tests\Component\VisitsFinder\Finders;
 
-use MLD\SessionVisitsBundle\Tests\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
+use MLD\SessionVisitsBundle\Tests\Component\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
 
 use MLD\SessionVisitsBundle\Entity\Date;
 use MLD\SessionVisitsBundle\Factory\CustomDateFactory;
 
-use MLD\SessionVisitsBundle\VisitsFinder\Factory\YearVisitsFinderFactory;
+use MLD\SessionVisitsBundle\Component\VisitsFinder\Factory\YearVisitsFinderFactory;
 
 final class YearVisitsFinderTest extends VisitsFinderKernelTestCase
 {
