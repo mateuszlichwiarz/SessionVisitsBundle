@@ -11,13 +11,13 @@ class VisitsTracker
 {
     public function __construct(
         private SessionRegister $sessionRegister,
-        private VisitsSaveResolver $visitsRecorder,
+        private VisitsSaveResolver $visitsSaveResolver,
     ){}
 
     public function start(): void
     {
         if($this->sessionRegister->IsSessionRegistered() === null) {
-            $this->visitsRecorder->save();
+            $this->visitsSaveResolver->save();
             $this->sessionRegister->register();
         }
     }
