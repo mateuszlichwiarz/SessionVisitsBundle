@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Entity;
+namespace MLD\SessionVisitsBundle\Component\VisitsTracker\Domain\Entity;
 
 use MLD\SessionVisitsBundle\Repository\VisitsRepository;
 use Doctrine\ORM\Mapping as ORM;
