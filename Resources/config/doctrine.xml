@@ -1,0 +1,14 @@
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services
+        https://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <defaults autowire="true" autoconfigure="true" public="false" />
+
+        <service id="MLD\SessionVisitsBundle\EntityManager" class="Doctrine\ORM\EntityManager">
+            <factory service="doctrine" method="getManager" />
+            <argument>MldSessionVisitsBundle</argument>
+        </service>
+    </services>
+</container>
