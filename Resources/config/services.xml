@@ -29,6 +29,11 @@
             <argument key="$manager" type="service" id="doctrine.orm.default_entity_manager" />
         </service>
 
+        <service id="mld_visits_subscriber" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Domain\Event\Subscriber\VisitsTrackerSubscriber">
+            <tag name="kernel.event_subscriber" />
+            <argument key="$visitsTracker" type="service" id="mld_visits_tracker" />
+        </service>
+
         <service id="mld_visits_factory" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Factory\VisitsFactory" />
         <service id="mld_visits_updater" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Updater\VisitsUpdater" />
         <service id="mld_current_date_factory" class="MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory" />
@@ -41,7 +46,8 @@
         <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Factory\VisitsFactory" alias="mld_visits_factory" />
         <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Updater\VisitsUpdater" alias="mld_visits_updater" />
         <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Persister\VisitsPersister" alias="mld_visits_persister" />
-        <service id="MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory" alias="mld_current_date_factory" />
         <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Controller\VisitsTrackableController" alias="mld_visits_trackable_controller" />
+        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Domain\Event\Subscriber\VisitsTrackerSubscriber" alias="mld_visits_subscriber" />
+        <service id="MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory" alias="mld_current_date_factory" />
     </services>
 </container>
