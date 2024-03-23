@@ -27,7 +27,7 @@ class VisitsSaveResolver
         private CurrentDateFactory $currentDateFactory,
     ){
         $this->date = $this->currentDateFactory->create();
-        $this->visits = $this->findVisit();
+        $this->visits = $this->visitsRepository->findOneVisitsObjectByDate($this->date);
     }
 
     public function save(): void
@@ -36,10 +36,5 @@ class VisitsSaveResolver
             ? $this->visitsFactory->create($this->date)
             : $this->visitsUpdater->update($this->visits)
         );
-    }
-
-    private function findVisit(): ?Visits
-    {
-        return $this->visitsRepository->findOneVisitsObjectByDate($this->date);
     }
 }
