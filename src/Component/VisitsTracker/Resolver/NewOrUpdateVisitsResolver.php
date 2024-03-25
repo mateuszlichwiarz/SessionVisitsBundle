@@ -13,7 +13,7 @@ use MLD\SessionVisitsBundle\Entity\Visits;
 use MLD\SessionVisitsBundle\Entity\Date;
 use MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
 
-class VisitsSaveResolver
+class NewOrUpdateVisitsResolver
 {
     private Date $date;
 
@@ -30,7 +30,7 @@ class VisitsSaveResolver
         $this->visits = $this->visitsRepository->findOneVisitsObjectByDate($this->date);
     }
 
-    public function save(): void
+    public function resolve(): void
     {
         $this->visitsPersister->persist($this->visits === null 
             ? $this->visitsFactory->create($this->date)
