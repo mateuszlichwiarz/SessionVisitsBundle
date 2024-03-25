@@ -50,4 +50,9 @@ class Visits
     {
         return $this->visits;
     }
+
+    public function addVisitsAmount(int $amount): void
+    {
+        $this->visits = $this->getVisits() + $amount;
+    }
 }
