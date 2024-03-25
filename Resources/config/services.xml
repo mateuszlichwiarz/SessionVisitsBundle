@@ -9,20 +9,13 @@
         <import resource="services/date_system.xml" />
         <import resource="services/event_listner.xml" />
         <import resource="service/repository.xml" />
+        <import resource="service/resolver.xml" />
     </imports>
 
     <services>
         <service id="mld_visits_tracker" class="MLD\SessionVisitsBundle\Component\VisitsTracker\VisitsTracker">
             <argument key="$sessionRegister" type="service" id="mld_session_register" />
             <argument key="$visitsSaveResolver" type="service" id="mld_visits_save_resolver" />
-        </service>
-
-        <service id="mld_visits_save_resolver" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Resolver\VisitsSaveResolver">
-            <argument key="$visitsRepository" type="service" id="mld_visits_repository" />
-            <argument key="$visitsFactory" type="service" id="mld_visits_factory" />
-            <argument key="$visitsUpdater" type="service" id="mld_visits_updater" />
-            <argument key="$visitsPersister" type="service" id="mld_visits_persister" />
-            <argument key="$currentDateFactory" type="service" id="mld_current_date_factory" />
         </service>
 
         <service id="mld_session_register" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Session\SessionRegister">
@@ -37,7 +30,6 @@
 
         <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\VisitsTracker" alias="mld_visits_tracker" />
         <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Session\SessionRegister" alias="mld_session_register" />
-        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Resolver\VisitsSaveResolver" alias="mld_visits_save_resolver" />
         <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Factory\VisitsFactory" alias="mld_visits_factory" />
         <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Persister\VisitsPersister" alias="mld_visits_persister" />
     </services>
