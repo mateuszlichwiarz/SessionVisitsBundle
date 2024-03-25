@@ -11,12 +11,11 @@ class VisitsFactory
 {
     public function create(Date $date): Visits
     {
-        $visit = new Visits();
-        return $visit
-            ->setMonth($date->getMonth())
-            ->setWeek($date->getWeek())
-            ->setYear($date->getYear())
-            ->setVisits(1)
-        ;
+        return new Visits(
+            $date->getMonth(),
+            $date->getWeek(),
+            $date->getYear(),
+            1
+        );
     }
 }
