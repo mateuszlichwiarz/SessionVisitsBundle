@@ -15,17 +15,16 @@ class Visits
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column]
-    private ?int $month = null;
-
-    #[ORM\Column]
-    private ?int $week = null;
-
-    #[ORM\Column]
-    private ?int $year = null;
-
-    #[ORM\Column]
-    private ?int $visits = null;
+    public function __construct(
+        #[ORM\Column]
+        protected ?int $month = null,
+        #[ORM\Column]
+        protected ?int $week = null,
+        #[ORM\Column]
+        protected ?int $year = null,
+        #[ORM\Column]
+        protected ?int $visits = null,
+    ){}
 
     public function getId(): ?int
     {
@@ -37,23 +36,9 @@ class Visits
         return $this->month;
     }
 
-    public function setMonth(int $month): static
-    {
-        $this->month = $month;
-
-        return $this;
-    }
-
     public function getWeek(): ?int
     {
         return $this->week;
-    }
-
-    public function setWeek(int $week): static
-    {
-        $this->week = $week;
-
-        return $this;
     }
 
     public function getYear(): ?int
@@ -61,22 +46,8 @@ class Visits
         return $this->year;
     }
 
-    public function setYear(int $year): static
-    {
-        $this->year = $year;
-
-        return $this;
-    }
-
     public function getVisits(): ?int
     {
         return $this->visits;
-    }
-
-    public function setVisits(int $visits): static
-    {
-        $this->visits = $visits;
-
-        return $this;
     }
 }
