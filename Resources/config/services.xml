@@ -34,6 +34,12 @@
             <argument key="$visitsTracker" type="service" id="mld_visits_tracker" />
         </service>
 
+        <service id="mld_save_visits_handler" class="MLD\SessionVisitsBundle\Component\VisitsTracker\CommandHandler\SaveVisitsHandler">
+            <tag name="messenger.message_handler" handles="MLD\SessionVisitsBundle\Component\VisitsTracker\Command\SaveVisits" />
+        </service>
+
+        <service id="mld_save_visits_command" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Command\SaveVisits" />
+
         <service id="mld_visits_factory" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Factory\VisitsFactory" />
         <service id="mld_visits_updater" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Updater\VisitsUpdater" />
         <service id="mld_current_date_factory" class="MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory" />
@@ -49,5 +55,7 @@
         <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Controller\VisitsTrackableController" alias="mld_visits_trackable_controller" />
         <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Domain\EventListner\VisitsTrackerListner" alias="mld_visits_tracker_listner" />
         <service id="MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory" alias="mld_current_date_factory" />
+        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Command\SaveVisits" alias="mld_save_visits_command" />
+        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\CommandHandler\SaveVisitsHandler" alias="mld_save_visits_handler" />
     </services>
 </container>
