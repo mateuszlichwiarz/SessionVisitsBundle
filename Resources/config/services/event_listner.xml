@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services
+        http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+
+        <service id="mld_visits_tracker_listner" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Domain\EventListner\VisitsTrackerListner">
+            <tag name="kernel.event_subscriber" />
+            <argument key="$visitsTracker" type="service" id="mld_visits_tracker" />
+        </service>
+        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Domain\EventListner\VisitsTrackerListner" alias="mld_visits_tracker_listner" />
+        
+    </services>
+</container>

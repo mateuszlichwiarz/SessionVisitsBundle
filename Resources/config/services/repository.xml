@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services
+        http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+
+        <service id="mld_visits_repository" class="MLD\SessionVisitsBundle\Repository\VisitsRepository">
+            <argument key="$registry" type="service" id="doctrine" />
+        </service>
+        <service id="MLD\SessionVisitsBundle\Repository\VisitsRepository" alias="mld_visits_repository" />
+
+    </services>
+</container>
