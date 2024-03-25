@@ -5,11 +5,11 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
 
-        <service id="mld_visits_tracker_listner" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Domain\EventListner\VisitsTrackerListner">
+        <service id="mld_visits_tracker_listner" class="MLD\SessionVisitsBundle\Component\VisitsTracker\EventListner\VisitsTrackerListner">
             <tag name="kernel.event_subscriber" />
             <argument key="$visitsTracker" type="service" id="mld_visits_tracker" />
         </service>
-        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Domain\EventListner\VisitsTrackerListner" alias="mld_visits_tracker_listner" />
+        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\EventListner\VisitsTrackerListner" alias="mld_visits_tracker_listner" />
         
     </services>
 </container>
