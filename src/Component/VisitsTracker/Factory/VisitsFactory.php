@@ -7,7 +7,7 @@ namespace MLD\SessionVisitsBundle\Component\VisitsTracker\Factory;
 use MLD\SessionVisitsBundle\Entity\Visits;
 use MLD\SessionVisitsBundle\Entity\Date;
 
-class VisitsFactory
+class VisitsFactory implements VisitsFactoryInterface
 {
     public function create(Date $date): Visits
     {
