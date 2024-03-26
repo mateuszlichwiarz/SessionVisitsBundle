@@ -6,12 +6,12 @@
     <services>
 
         <service id="mld_start_tracking_visits_handler" class="MLD\SessionVisitsBundle\Component\VisitsTracker\CommandHandler\StartTrackingVisitsHandler">
-            <tag name="messenger.message_handler" handles="MLD\SessionVisitsBundle\Component\VisitsTracker\Command\StartTrackingVisits" />
+            <tag name="messenger.message_handler" handles="MLD\SessionVisitsBundle\Component\VisitsTracker\Command\StartTrackingVisitsCommand" />
         </service>
         <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\CommandHandler\StartTrackingVisitsHandler" alias="mld_start_tracking_visits_handler" />
 
-        <service id="mld_start_tracking_visits_command" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Command\StartTrackingVisits" />
-        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Command\StartTrackingVisits" alias="mld_start_tracking_visits_command" />
+        <service id="mld_start_tracking_visits_command" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Command\StartTrackingVisitsCommand" />
+        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Command\StartTrackingVisitsCommand" alias="mld_start_tracking_visits_command" />
 
     </services>
 </container>
