@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Component\VisitsTracker\Domain\EventListner;
+namespace MLD\SessionVisitsBundle\Component\VisitsTracker\EventListner;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\ControllerEvent;
