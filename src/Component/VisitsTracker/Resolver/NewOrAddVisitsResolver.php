@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace MLD\SessionVisitsBundle\Component\VisitsTracker\Resolver;
 
-use MLD\SessionVisitsBundle\Component\VisitsTracker\Factory\VisitsFactory;
+use MLD\SessionVisitsBundle\Component\VisitsTracker\Factory\VisitsFactoryInterface;
 
 use MLD\SessionVisitsBundle\Entity\Visits;
 use MLD\SessionVisitsBundle\Entity\Date;
@@ -13,7 +13,7 @@ class NewOrAddVisitsResolver
 {
 
     public function __construct(
-        private VisitsFactory $visitsFactory,
+        private VisitsFactoryInterface $visitsFactory,
     ){}
 
     public function resolve(
