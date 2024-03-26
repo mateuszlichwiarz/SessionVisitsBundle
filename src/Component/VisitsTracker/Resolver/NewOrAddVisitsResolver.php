@@ -17,7 +17,7 @@ class NewOrAddVisitsResolver
     ){}
 
     public function resolve(
-        Visits $visits,
+        Null|Visits $visits = null,
         Date $date
     ): Visits
     {
