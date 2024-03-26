@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace MLD\SessionVisitsBundle\Component\VisitsTracker\Resolver;
 
-use MLD\SessionVisitsBundle\Component\DateSystem\Factory\CustomDateFactory;
 use MLD\SessionVisitsBundle\Component\VisitsTracker\Factory\VisitsFactory;
 
 use MLD\SessionVisitsBundle\Entity\Visits;
@@ -15,7 +14,6 @@ class NewOrAddVisitsResolver
 
     public function __construct(
         private VisitsFactory $visitsFactory,
-        private CustomDateFactory $dateFactory,
     ){}
 
     public function resolve(
