@@ -24,9 +24,9 @@ class VisitsTracker
         private NewOrAddVisitsResolver $resolver,
         private VisitsRepository $repository,
         private VisitsPersister $persister,
-        private CurrentDateFactory $currentDateFactory,
+        private CurrentDateFactory $dateFactory,
     ){
-        $this->date = $this->currentDateFactory->create();
+        $this->date = $this->dateFactory->create();
         $this->visits = $this->repository->findOneVisitsObjectByDate($this->date);
         
     }
@@ -34,8 +34,8 @@ class VisitsTracker
     public function start(): void
     {
         if($this->sessionRegister->IsSessionRegistered() === null) {
-            $this->sessionRegister->register();
             $this->persister->persist($this->resolver->resolve($this->visits, $this->date));
+            $this->sessionRegister->register();
         }
     }
 
