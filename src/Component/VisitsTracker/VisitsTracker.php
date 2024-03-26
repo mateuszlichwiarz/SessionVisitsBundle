@@ -28,7 +28,6 @@ class VisitsTracker
     ){
         $this->date = $this->dateFactory->create();
         $this->visits = $this->repository->findOneVisitsObjectByDate($this->date);
-        
     }
 
     public function start(): void
