@@ -7,9 +7,9 @@ namespace Hume\SessionVisitsBundle;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
-use Hume\SessionVisitsBundle\DependencyInjection\MldSessionVisitsExtension;
+use Hume\SessionVisitsBundle\DependencyInjection\HumeSessionVisitsExtension;
 
-class MldSessionVisitsBundle extends AbstractBundle
+class HumeSessionVisitsBundle extends AbstractBundle
 {
     public function getPath(): string
     {
@@ -18,6 +18,6 @@ class MldSessionVisitsBundle extends AbstractBundle
 
     public function getContainerExtension(): ?ExtensionInterface
     {
-        return new MldSessionVisitsExtension();
+        return new HumeSessionVisitsExtension();
     }
 }
