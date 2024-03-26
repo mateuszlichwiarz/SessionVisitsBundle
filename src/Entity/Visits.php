@@ -51,8 +51,10 @@ class Visits
         return $this->visits;
     }
 
-    public function addVisitsAmount(int $amount): void
+    public function addVisitsAmount(int $amount): Visits
     {
         $this->visits = $this->getVisits() + $amount;
+
+        return $this;
     }
 }
