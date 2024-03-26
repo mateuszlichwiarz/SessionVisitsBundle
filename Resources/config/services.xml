@@ -8,14 +8,17 @@
         <import resource="services/controller.xml" />
         <import resource="services/date_system.xml" />
         <import resource="services/event_listner.xml" />
-        <import resource="service/repository.xml" />
-        <import resource="service/resolver.xml" />
+        <import resource="services/repository.xml" />
+        <import resource="services/resolver.xml" />
     </imports>
 
     <services>
         <service id="mld_visits_tracker" class="MLD\SessionVisitsBundle\Component\VisitsTracker\VisitsTracker">
             <argument key="$sessionRegister" type="service" id="mld_session_register" />
-            <argument key="$visitsSaveResolver" type="service" id="mld_visits_save_resolver" />
+            <argument key="$resolver" type="service" id="mld_new_or_add_visits_resolver" />
+            <argument key="$repository" type="service" id="mld_visits_repository" />
+            <argument key="$persister" type="service" id="mld_visits_persister" />
+            <argument key="$dateFactory" type="service" id="mld_date_system_current_date_factory" />
         </service>
 
         <service id="mld_session_register" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Session\SessionRegister">
