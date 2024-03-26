@@ -5,8 +5,8 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
 
-        <service id="mld_current_date_factory" class="MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory" />
-        <service id="MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory" alias="mld_current_date_factory" />
+        <service id="mld_date_system_current_date_factory" class="MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory" />
+        <service id="MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory" alias="mld_date_system_current_date_factory" />
 
     </services>
 </container>
