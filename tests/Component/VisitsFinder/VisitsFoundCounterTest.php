@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Tests\Component\VisitsFinder;
+namespace Hume\SessionVisitsBundle\Tests\Component\VisitsFinder;
 
-use MLD\SessionVisitsBundle\Tests\Component\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
+use Hume\SessionVisitsBundle\Tests\Component\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
 
-use MLD\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Entity\Date;
 
-use MLD\SessionVisitsBundle\Component\VisitsFinder\VisitsFinderInterface;
-use MLD\SessionVisitsBundle\Component\VisitsFinder\VisitsFoundCounter;
-use MLD\SessionVisitsBundle\Entity\Visits;
+use Hume\SessionVisitsBundle\Component\VisitsFinder\VisitsFinderInterface;
+use Hume\SessionVisitsBundle\Component\VisitsFinder\VisitsFoundCounter;
+use Hume\SessionVisitsBundle\Entity\Visits;
 
-use MLD\SessionVisitsBundle\Repository\VisitsRepository;
+use Hume\SessionVisitsBundle\Repository\VisitsRepository;
 
 class VisitsFoundCounterTest extends VisitsFinderKernelTestCase
 {

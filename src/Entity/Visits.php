@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Entity;
+namespace Hume\SessionVisitsBundle\Entity;
 
-use MLD\SessionVisitsBundle\Repository\VisitsRepository;
+use Hume\SessionVisitsBundle\Repository\VisitsRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: VisitsRepository::class)]

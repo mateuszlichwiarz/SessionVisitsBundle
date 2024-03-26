@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Entity;
+namespace Hume\SessionVisitsBundle\Entity;
 
-use MLD\SessionVisitsBundle\Component\DateSystem\Calculator\Trait\WeeksCalculatorTrait;
+use Hume\SessionVisitsBundle\Component\DateSystem\Calculator\Trait\WeeksCalculatorTrait;
 use DateTime;
 
 class Date

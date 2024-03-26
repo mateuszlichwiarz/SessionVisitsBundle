@@ -5,8 +5,8 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
 
-        <service id="mld_visits_trackable_controller" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Controller\VisitsTrackableController" />
-        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Controller\VisitsTrackableController" alias="mld_visits_trackable_controller" />
+        <service id="hume_visits_trackable_controller" class="Hume\SessionVisitsBundle\Component\VisitsTracker\Controller\VisitsTrackableController" />
+        <service id="Hume\SessionVisitsBundle\Component\VisitsTracker\Controller\VisitsTrackableController" alias="hume_visits_trackable_controller" />
 
     </services>
 </container>

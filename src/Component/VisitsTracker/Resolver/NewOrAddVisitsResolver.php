@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Component\VisitsTracker\Resolver;
+namespace Hume\SessionVisitsBundle\Component\VisitsTracker\Resolver;
 
-use MLD\SessionVisitsBundle\Component\VisitsTracker\Factory\VisitsFactoryInterface;
+use Hume\SessionVisitsBundle\Component\VisitsTracker\Factory\VisitsFactoryInterface;
 
-use MLD\SessionVisitsBundle\Entity\Visits;
-use MLD\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Entity\Visits;
+use Hume\SessionVisitsBundle\Entity\Date;
 
 class NewOrAddVisitsResolver
 {

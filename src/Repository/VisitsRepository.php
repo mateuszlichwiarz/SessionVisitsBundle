@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Repository;
+namespace Hume\SessionVisitsBundle\Repository;
 
-use MLD\SessionVisitsBundle\Entity\Visits;
+use Hume\SessionVisitsBundle\Entity\Visits;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
-use MLD\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Entity\Date;
 
 /**
  * @extends ServiceEntityRepository<Visits>

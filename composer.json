@@ -1,5 +1,5 @@
 {
-    "name": "mld/session-visits-bundle",
+    "name": "hume/session-visits-bundle",
     "version": "0.1.0",
     "type": "symfony-bundle",
     "description": "This bundle tracking visits by Symfony-Sessions and persist in db.",
@@ -9,12 +9,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MLD\\SessionVisitsBundle\\": "src/"
+            "Hume\\SessionVisitsBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MLD\\SessionVisitsBundle\\Tests": "tests/"
+            "Hume\\SessionVisitsBundle\\Tests": "tests/"
         }
     },
     "authors": [

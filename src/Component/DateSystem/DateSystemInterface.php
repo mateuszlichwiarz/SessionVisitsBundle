@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Component\DateSystem;
+namespace Hume\SessionVisitsBundle\Component\DateSystem;
 
-use MLD\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Entity\Date;
 
 interface DateSystemInterface
 {

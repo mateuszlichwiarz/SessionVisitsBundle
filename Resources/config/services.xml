@@ -13,27 +13,27 @@
     </imports>
 
     <services>
-        <service id="mld_visits_tracker" class="MLD\SessionVisitsBundle\Component\VisitsTracker\VisitsTracker">
-            <argument key="$sessionRegister" type="service" id="mld_session_register" />
-            <argument key="$resolver" type="service" id="mld_new_or_add_visits_resolver" />
-            <argument key="$repository" type="service" id="mld_visits_repository" />
-            <argument key="$persister" type="service" id="mld_visits_persister" />
-            <argument key="$dateFactory" type="service" id="mld_date_system_current_date_factory" />
+        <service id="hume_visits_tracker" class="Hume\SessionVisitsBundle\Component\VisitsTracker\VisitsTracker">
+            <argument key="$sessionRegister" type="service" id="hume_session_register" />
+            <argument key="$resolver" type="service" id="hume_new_or_add_visits_resolver" />
+            <argument key="$repository" type="service" id="hume_visits_repository" />
+            <argument key="$persister" type="service" id="hume_visits_persister" />
+            <argument key="$dateFactory" type="service" id="hume_date_system_current_date_factory" />
         </service>
 
-        <service id="mld_session_register" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Session\SessionRegister">
+        <service id="hume_session_register" class="Hume\SessionVisitsBundle\Component\VisitsTracker\Session\SessionRegister">
             <argument key="$requestStack" type="service" id="request_stack" />
         </service>
 
-        <service id="mld_visits_persister" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Persister\VisitsPersister">
+        <service id="hume_visits_persister" class="Hume\SessionVisitsBundle\Component\VisitsTracker\Persister\VisitsPersister">
             <argument key="$manager" type="service" id="doctrine.orm.default_entity_manager" />
         </service>
 
-        <service id="mld_visits_factory" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Factory\VisitsFactory" />
+        <service id="hume_visits_factory" class="Hume\SessionVisitsBundle\Component\VisitsTracker\Factory\VisitsFactory" />
 
-        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\VisitsTracker" alias="mld_visits_tracker" />
-        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Session\SessionRegister" alias="mld_session_register" />
-        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Factory\VisitsFactory" alias="mld_visits_factory" />
-        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Persister\VisitsPersister" alias="mld_visits_persister" />
+        <service id="Hume\SessionVisitsBundle\Component\VisitsTracker\VisitsTracker" alias="hume_visits_tracker" />
+        <service id="Hume\SessionVisitsBundle\Component\VisitsTracker\Session\SessionRegister" alias="hume_session_register" />
+        <service id="Hume\SessionVisitsBundle\Component\VisitsTracker\Factory\VisitsFactory" alias="hume_visits_factory" />
+        <service id="Hume\SessionVisitsBundle\Component\VisitsTracker\Persister\VisitsPersister" alias="hume_visits_persister" />
     </services>
 </container>

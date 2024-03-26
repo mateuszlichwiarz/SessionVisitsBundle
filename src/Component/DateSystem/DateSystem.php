@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Component\DateSystem;
+namespace Hume\SessionVisitsBundle\Component\DateSystem;
 
-use MLD\SessionVisitsBundle\Entity\Date;
-use MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
-use MLD\SessionVisitsBundle\Component\DateSystem\Factory\CustomDateFactory;
-use MLD\SessionVisitsBundle\Component\DateSystem\Factory\Interface\CustomDateFactoryInterface;
-use MLD\SessionVisitsBundle\Component\DateSystem\Factory\Interface\DateFactoryInterface;
+use Hume\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
+use Hume\SessionVisitsBundle\Component\DateSystem\Factory\CustomDateFactory;
+use Hume\SessionVisitsBundle\Component\DateSystem\Factory\Interface\CustomDateFactoryInterface;
+use Hume\SessionVisitsBundle\Component\DateSystem\Factory\Interface\DateFactoryInterface;
 
-use MLD\SessionVisitsBundle\Component\DateSystem\DateSystemInterface;
+use Hume\SessionVisitsBundle\Component\DateSystem\DateSystemInterface;
 
 class DateSystem implements DateSystemInterface
 {

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Component\VisitsFinder;
+namespace Hume\SessionVisitsBundle\Component\VisitsFinder;
 
-use MLD\SessionVisitsBundle\Entity\Date;
-use MLD\SessionVisitsBundle\Entity\Visits;
+use Hume\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Entity\Visits;
 
 interface VisitsFinderInterface
 {

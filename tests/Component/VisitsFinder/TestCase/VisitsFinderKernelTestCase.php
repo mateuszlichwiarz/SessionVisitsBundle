@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Tests\Component\VisitsFinder\TestCase;
+namespace Hume\SessionVisitsBundle\Tests\Component\VisitsFinder\TestCase;
 
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
-use MLD\SessionVisitsBundle\Repository\VisitsRepository;
+use Hume\SessionVisitsBundle\Repository\VisitsRepository;
 
-use MLD\SessionVisitsBundle\Component\DateSystem\dateSystemInterface;
+use Hume\SessionVisitsBundle\Component\DateSystem\dateSystemInterface;
 
 abstract class VisitsFinderKernelTestCase extends KernelTestCase
 {

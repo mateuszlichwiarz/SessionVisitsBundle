@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Tests\Component\DateSystem\Factory;
+namespace Hume\SessionVisitsBundle\Tests\Component\DateSystem\Factory;
 
 use PHPUnit\Framework\TestCase;
 
-use MLD\SessionVisitsBundle\Component\DateSystem\Factory\CustomDateFactory;
-use MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
-use MLD\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Component\DateSystem\Factory\CustomDateFactory;
+use Hume\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
+use Hume\SessionVisitsBundle\Entity\Date;
 
 final class DateFactoryTest extends TestCase
 {

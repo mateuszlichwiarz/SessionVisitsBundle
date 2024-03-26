@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Component\VisitsTracker\CommandHandler;
+namespace Hume\SessionVisitsBundle\Component\VisitsTracker\CommandHandler;
 
-use MLD\SessionVisitsBundle\Component\VisitsTracker\Command\StartTrackingVisitsCommand;
+use Hume\SessionVisitsBundle\Component\VisitsTracker\Command\StartTrackingVisitsCommand;
 
 class StartTrackingVisitsHandler
 {

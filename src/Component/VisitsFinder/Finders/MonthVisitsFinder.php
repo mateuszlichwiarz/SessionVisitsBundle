@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Component\VisitsFinder\Finders;
+namespace Hume\SessionVisitsBundle\Component\VisitsFinder\Finders;
 
-use MLD\SessionVisitsBundle\Component\VisitsFinder\Finders\Interface\ManyResultsVisitsFinderInterface as VisitsFinderInterface;
+use Hume\SessionVisitsBundle\Component\VisitsFinder\Finders\Interface\ManyResultsVisitsFinderInterface as VisitsFinderInterface;
 
-use MLD\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Entity\Date;
 
 final class MonthVisitsFinder implements VisitsFinderInterface
 {

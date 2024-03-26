@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Component\VisitsTracker\Factory;
+namespace Hume\SessionVisitsBundle\Component\VisitsTracker\Factory;
 
-use MLD\SessionVisitsBundle\Entity\Visits;
-use MLD\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Entity\Visits;
+use Hume\SessionVisitsBundle\Entity\Date;
 
 class VisitsFactory implements VisitsFactoryInterface
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Component\VisitsFinder\Finders\Interface;
+namespace Hume\SessionVisitsBundle\Component\VisitsFinder\Finders\Interface;
 
-use MLD\SessionVisitsBundle\Entity\Visits;
+use Hume\SessionVisitsBundle\Entity\Visits;
 
 interface OneResultVisitsFinderInterface extends VisitsFinderInterface
 {

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Tests\Component\DateSystem;
+namespace Hume\SessionVisitsBundle\Tests\Component\DateSystem;
 
 use PHPUnit\Framework\TestCase;
 
-use MLD\SessionVisitsBundle\Component\DateSystem\Factory\CustomDateFactory;
-use MLD\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Component\DateSystem\Factory\CustomDateFactory;
+use Hume\SessionVisitsBundle\Entity\Date;
 
 final class CustomDateTest extends TestCase
 {

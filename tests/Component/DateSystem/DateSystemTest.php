@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Tests\Component\DateSystem;
+namespace Hume\SessionVisitsBundle\Tests\Component\DateSystem;
 
-use MLD\SessionVisitsBundle\Tests\Component\DateSystem\TestCase\DateSystemKernelTestCase;
+use Hume\SessionVisitsBundle\Tests\Component\DateSystem\TestCase\DateSystemKernelTestCase;
 
-use MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
-use MLD\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
+use Hume\SessionVisitsBundle\Entity\Date;
 
 class DateSystemTest extends DateSystemKernelTestCase
 {

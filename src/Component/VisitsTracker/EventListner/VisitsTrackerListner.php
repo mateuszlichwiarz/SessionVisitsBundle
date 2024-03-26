@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Component\VisitsTracker\EventListner;
+namespace Hume\SessionVisitsBundle\Component\VisitsTracker\EventListner;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\ControllerEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
-use MLD\SessionVisitsBundle\Component\VisitsTracker\Controller\VisitsTrackableController;
-use MLD\SessionVisitsBundle\Component\VisitsTracker\VisitsTracker;
+use Hume\SessionVisitsBundle\Component\VisitsTracker\Controller\VisitsTrackableController;
+use Hume\SessionVisitsBundle\Component\VisitsTracker\VisitsTracker;
 
 class VisitsTrackerListner implements EventSubscriberInterface
 {

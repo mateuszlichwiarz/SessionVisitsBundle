@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Tests\Component\VisitsFinder\Factory;
+namespace Hume\SessionVisitsBundle\Tests\Component\VisitsFinder\Factory;
 
-use MLD\SessionVisitsBundle\Tests\Component\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
+use Hume\SessionVisitsBundle\Tests\Component\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
 
-use MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
-use MLD\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
+use Hume\SessionVisitsBundle\Entity\Date;
 
-use MLD\SessionVisitsBundle\Component\VisitsFinder\Factory\WeekVisitsFinderFactory;
-use MLD\SessionVisitsBundle\Component\VisitsFinder\Finders\WeekVisitsFinder;
+use Hume\SessionVisitsBundle\Component\VisitsFinder\Factory\WeekVisitsFinderFactory;
+use Hume\SessionVisitsBundle\Component\VisitsFinder\Finders\WeekVisitsFinder;
 
-use MLD\SessionVisitsBundle\Component\VisitsFinder\Factory\MonthVisitsFinderFactory;
-use MLD\SessionVisitsBundle\Component\VisitsFinder\Finders\MonthVisitsFinder;
+use Hume\SessionVisitsBundle\Component\VisitsFinder\Factory\MonthVisitsFinderFactory;
+use Hume\SessionVisitsBundle\Component\VisitsFinder\Finders\MonthVisitsFinder;
 
-use MLD\SessionVisitsBundle\Component\VisitsFinder\Factory\YearVisitsFinderFactory;
-use MLD\SessionVisitsBundle\Component\VisitsFinder\Finders\YearVisitsFinder;
+use Hume\SessionVisitsBundle\Component\VisitsFinder\Factory\YearVisitsFinderFactory;
+use Hume\SessionVisitsBundle\Component\VisitsFinder\Finders\YearVisitsFinder;
 
 final class VisitsFinderFactoryTest extends VisitsFinderKernelTestCase
 {

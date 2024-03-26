@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Component\DateSystem\Factory\Interface;
+namespace Hume\SessionVisitsBundle\Component\DateSystem\Factory\Interface;
 
-use MLD\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Entity\Date;
 
 interface CustomDateFactoryInterface extends DateFactoryInterface
 {

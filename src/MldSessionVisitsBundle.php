@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle;
+namespace Hume\SessionVisitsBundle;
 
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
-use MLD\SessionVisitsBundle\DependencyInjection\MldSessionVisitsExtension;
+use Hume\SessionVisitsBundle\DependencyInjection\MldSessionVisitsExtension;
 
 class MldSessionVisitsBundle extends AbstractBundle
 {

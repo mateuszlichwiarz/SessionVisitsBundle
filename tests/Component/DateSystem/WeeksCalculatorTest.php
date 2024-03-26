@@ -1,10 +1,10 @@
 <?php
 
-namespace MLD\SessionVisitsBundle\Tests\Component\DateSystem;
+namespace Hume\SessionVisitsBundle\Tests\Component\DateSystem;
 
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
-use MLD\SessionVisitsBundle\Component\DateSystem\Calculator\Trait\WeeksCalculatorTrait;
+use Hume\SessionVisitsBundle\Component\DateSystem\Calculator\Trait\WeeksCalculatorTrait;
 
 final class DateTest extends KernelTestCase
 {

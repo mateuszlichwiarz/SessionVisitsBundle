@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Component\VisitsTracker;
+namespace Hume\SessionVisitsBundle\Component\VisitsTracker;
 
-use MLD\SessionVisitsBundle\Component\VisitsTracker\Session\SessionRegister;
-use MLD\SessionVisitsBundle\Component\VisitsTracker\Resolver\NewOrAddVisitsResolver;
-use MLD\SessionVisitsBundle\Component\VisitsTracker\Persister\VisitsPersister;
-use MLD\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
-use MLD\SessionVisitsBundle\Repository\VisitsRepository;
+use Hume\SessionVisitsBundle\Component\VisitsTracker\Session\SessionRegister;
+use Hume\SessionVisitsBundle\Component\VisitsTracker\Resolver\NewOrAddVisitsResolver;
+use Hume\SessionVisitsBundle\Component\VisitsTracker\Persister\VisitsPersister;
+use Hume\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
+use Hume\SessionVisitsBundle\Repository\VisitsRepository;
 
-use MLD\SessionVisitsBundle\Entity\Visits;
-use MLD\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Entity\Visits;
+use Hume\SessionVisitsBundle\Entity\Date;
 
 class VisitsTracker
 {

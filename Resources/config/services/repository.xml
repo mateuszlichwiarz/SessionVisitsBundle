@@ -5,10 +5,10 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
 
-        <service id="mld_visits_repository" class="MLD\SessionVisitsBundle\Repository\VisitsRepository">
+        <service id="hume_visits_repository" class="Hume\SessionVisitsBundle\Repository\VisitsRepository">
             <argument key="$registry" type="service" id="doctrine" />
         </service>
-        <service id="MLD\SessionVisitsBundle\Repository\VisitsRepository" alias="mld_visits_repository" />
+        <service id="Hume\SessionVisitsBundle\Repository\VisitsRepository" alias="hume_visits_repository" />
 
     </services>
 </container>

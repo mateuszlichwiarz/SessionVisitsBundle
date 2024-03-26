@@ -5,10 +5,10 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
 
-        <service id="mld_new_or_add_visits_resolver" class="MLD\SessionVisitsBundle\Component\VisitsTracker\Resolver\NewOrAddVisitsResolver">
-            <argument key="$visitsFactory" type="service" id="mld_visits_factory" />
+        <service id="hume_new_or_add_visits_resolver" class="Hume\SessionVisitsBundle\Component\VisitsTracker\Resolver\NewOrAddVisitsResolver">
+            <argument key="$visitsFactory" type="service" id="hume_visits_factory" />
         </service>
-        <service id="MLD\SessionVisitsBundle\Component\VisitsTracker\Resolver\NewOrAddVisitsResolver" alias="mld_new_or_add_visits_resolver" />
+        <service id="Hume\SessionVisitsBundle\Component\VisitsTracker\Resolver\NewOrAddVisitsResolver" alias="hume_new_or_add_visits_resolver" />
 
     </services>
 </container>

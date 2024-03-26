@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Tests\Component\VisitsFinder\Finders;
+namespace Hume\SessionVisitsBundle\Tests\Component\VisitsFinder\Finders;
 
-use MLD\SessionVisitsBundle\Tests\Component\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
+use Hume\SessionVisitsBundle\Tests\Component\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
 
-use MLD\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Entity\Date;
 
-use MLD\SessionVisitsBundle\Component\VisitsFinder\Factory\MonthVisitsFinderFactory;
+use Hume\SessionVisitsBundle\Component\VisitsFinder\Factory\MonthVisitsFinderFactory;
 
 final class MonthVisitsFinderTest extends VisitsFinderKernelTestCase
 {

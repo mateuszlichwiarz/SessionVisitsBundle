@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Component\DateSystem\Factory;
+namespace Hume\SessionVisitsBundle\Component\DateSystem\Factory;
 
-use MLD\SessionVisitsBundle\Component\DateSystem\Factory\Interface\CustomDateFactoryInterface as DateFactoryInterface;
-use MLD\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Component\DateSystem\Factory\Interface\CustomDateFactoryInterface as DateFactoryInterface;
+use Hume\SessionVisitsBundle\Entity\Date;
 
 use DateTime;
 

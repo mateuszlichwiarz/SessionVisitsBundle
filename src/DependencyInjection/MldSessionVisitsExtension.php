@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\DependencyInjection;
+namespace Hume\SessionVisitsBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;

@@ -1,13 +1,13 @@
 <?php
 
-namespace MLD\SessionVisitsBundle\Component\VisitsFinder;
+namespace Hume\SessionVisitsBundle\Component\VisitsFinder;
 
-use MLD\SessionVisitsBundle\Entity\Visits;
+use Hume\SessionVisitsBundle\Entity\Visits;
 
-use MLD\SessionVisitsBundle\Component\VisitsFinder\Factory\VisitsFinderFactoryInterface;
-use MLD\SessionVisitsBundle\Component\VisitsFinder\VisitsFinderInterface;
+use Hume\SessionVisitsBundle\Component\VisitsFinder\Factory\VisitsFinderFactoryInterface;
+use Hume\SessionVisitsBundle\Component\VisitsFinder\VisitsFinderInterface;
 
-use MLD\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Entity\Date;
 
 class VisitsFinder implements VisitsFinderInterface
 {

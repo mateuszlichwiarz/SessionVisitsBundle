@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace MLD\SessionVisitsBundle\Tests\Component\DateSystem\TestCase;
+namespace Hume\SessionVisitsBundle\Tests\Component\DateSystem\TestCase;
 
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
-use MLD\SessionVisitsBundle\Component\DateSystem\DateSystemInterface;
+use Hume\SessionVisitsBundle\Component\DateSystem\DateSystemInterface;
 
 abstract class DateSystemKernelTestCase extends KernelTestCase
 {
