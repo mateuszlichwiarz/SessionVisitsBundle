@@ -1,7 +1,6 @@
 {
     "name": "hume/session-visits-bundle",
     "version": "2.2",
-    "keywords": ["dev"],
     "type": "symfony-bundle",
     "description": "This bundle tracking visits by Symfony session.",
     "license": "MIT",
