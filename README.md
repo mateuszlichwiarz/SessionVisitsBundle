@@ -1,6 +1,6 @@
 # SessionVisitsBundle
 
-Hello, this is my variation on how visits should be counted and stored in database.
+Hello, this bundle is my idea how visits should be counted and stored in database.
 
 SessionVisitsBundle register visit by session and flush to database.
 Bundle track visits, process and store week, month, year visits in database.
