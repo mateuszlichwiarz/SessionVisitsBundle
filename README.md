@@ -10,6 +10,8 @@ Bundle track visits, process and store week, month, year visits in database.
 - VisitsFinder
 - DateSystem
 
+#
+#
 > [!WARNING]
 > At this moment it's only sandbox in which I throw my new skills and ideas so I don't recommend use it in production.
 
@@ -30,6 +32,7 @@ Just in case, check this line at config/bundle.php is identical:
 // config/bundles.php
 Hume\SessionVisitsBundle\HumeSessionVisitsBundle::class => ['dev' => true, 'test' => true],
 ```
+#
 > [!NOTE]
 > Or just set ['all' => true] if for anybody it useful in production but as I said it is not recommended.
 
@@ -57,6 +60,8 @@ class ExampleController implements VisitsTrackableController
 ```
 
 And that's it! Your controller is listened by VisitsTracker subscriber kernel.controller.
+#
+#
 > [!TIP]
 > If you want more about how exactly events listners and subscribers works check this out:
 > https://symfony.com/doc/current/event_dispatcher.html
@@ -99,8 +104,8 @@ Repository:
 use Hume\VisitsSessionBundle\Repository\VisitsRepository;
 ```
 
-DateSystem
-
+## DateSystem
+#
 > [!CAUTION]
 > Section under construction.
 
