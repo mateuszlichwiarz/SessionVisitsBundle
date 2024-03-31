@@ -107,13 +107,13 @@ Recommended is using Repository to fetch visits objects.
 > [!IMPORTANT]
 > Check find and sum methods in [Visits Repository](src/Repository/VisitsRepositry.php)
 > Check visits model in [Visits Entity](src/Entity/Visits.php)
-#
-#
 
 Repository:
 ``` php
 use Hume\VisitsSessionBundle\Repository\VisitsRepository;
 ```
+#
+#
 
 ## DateSystem
 #
