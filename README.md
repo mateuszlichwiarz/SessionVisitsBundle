@@ -46,7 +46,9 @@ You have to just tag Controller in which you want tracking visits.
 ``` php
 <?php
 // src/Controller/ExampleController.php
+
 declare(strict_types=1);
+
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
@@ -55,7 +57,9 @@ use Hume\SessionVisitsBundle\Controller\VisitsTrackableController;
 class ExampleController implements VisitsTrackableController
 {
     public function indexAction(): Response
-    { return new Response('Hello world!') }
+    {
+        return new Response('Hello world!')
+    }
 }
 ```
 
@@ -73,7 +77,9 @@ Classic dependency injection:
 ``` php
 <?php
 // src/Controller/ExampleController.php
+
 declare(strict_types=1);
+
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
@@ -82,7 +88,9 @@ use Hume\SessionVisitsBundle\Component\VisitsTracker\VisitsTracker;
 class ExampleController
 {
     public function __construct(private visitsTracker $visitsTracker)
-    { $visitsTracker->start(); }
+    {
+        $visitsTracker->start();
+    }
     
     public function indexAction(VisitsTracker $visitsTracker): Response
     {
