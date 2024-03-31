@@ -5,7 +5,7 @@ Hello, this bundle is my idea how visits should be counted and stored in databas
 SessionVisitsBundle register visit by session and flush to database.
 Bundle track visits, process and store week, month, year visits in database.
 
-## Contain Components
+### Contain Components
 - VisitsTracker
 - VisitsFinder
 - DateSystem
@@ -72,7 +72,7 @@ And that's it! Your controller is listened by VisitsTracker subscriber kernel.co
 #
 #
 
-## Or
+### Or DI
 Classic dependency injection:
 ``` php
 <?php
