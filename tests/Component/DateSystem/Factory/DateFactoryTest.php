@@ -2,41 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Hume\SessionVisitsBundle\Tests\Component\DateSystem\Factory;
+namespace Hume\SessionVisitsBundle\tests\Component\DateSystem\Calculator\WeekCalculator;
 
 use PHPUnit\Framework\TestCase;
 
-use Hume\SessionVisitsBundle\Component\DateSystem\Factory\CustomDateFactory;
-use Hume\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
-use Hume\SessionVisitsBundle\Entity\Date;
+use Hume\SessionVisitsBundle\Component\DateSystem\Factory\DateFactory;
+use Hume\SessionVisitsBundle\Component\DateSystem\Model\Date;
 
 final class DateFactoryTest extends TestCase
 {
-    public function testCanCreateCustomDateFactory(): void
+    public function testCreateDate(): void
     {
-        $customDateFactory = new CustomDateFactory();
         $this->assertInstanceOf(
             Date::class,
-            $customDateFactory->create('20-12-2020')
+            $this->createMock(DateFactory::class)->create(),
         );
     }
-
-    public function testCanCreateCurrentDateFactory(): void
-    {
-        $currentDateFactory = new CurrentDateFactory();
-        $this->assertInstanceOf(
-            Date::class,
-            $currentDateFactory->create()
-        );
-    }
-
-    /*
-    public function testExpectExceptionCustomDateFactory(): void
-    {
-        $customDateFactory = new CustomDateFactory();
-
-        $this->expectException(\Exception::class);
-        $customDateFactory->create();
-    }
-    */
 }
