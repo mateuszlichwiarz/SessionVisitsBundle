@@ -5,17 +5,12 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
 
-        <service id="hume_date_system" class="Hume\SessionVisitsBundle\Component\DateSystem\DateSystem">
-            <argument key="$currentDateFactory" type="service" id="hume_date_system_current_date_factory"/>
-            <argument key="$customDateFactory" type="service" id="hume_date_system_custom_date_factory"/>
+        <service id="hume_date_factory" class="Hume\SessionVisitsBundle\Component\DateSystem\Factory\DateFactory">
+            <argument key="$weekCalculator" type="service" id="hume_date_week_calculator"/>
         </service>
-        <service id="Hume\SessionVisitsBundle\Component\DateSystem\DateSystem" alias="hume_date_system" />
+        <service id="Hume\SessionVisitsBundle\Component\DateSystem\\Factory\DateFactory" alias="hume_date_factory" />
 
-        <service id="hume_date_system_current_date_factory" class="Hume\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory" />
-        <service id="Hume\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory" alias="hume_date_system_current_date_factory" />
-
-        <service id="hume_date_system_custom_date_factory" class="Hume\SessionVisitsBundle\Component\DateSystem\Factory\CustomDateFactory" />
-        <service id="Hume\SessionVisitsBundle\Component\DateSystem\Factory\CustomDateFactory" alias="hume_date_system_custom_date_factory" />
-
+        <service id="hume_date_week_calculator" class="Hume\SessionVisitsBundle\Component\DateSystem\Calculator\WeekCalculator" />
+        <service id="Hume\SessionVisitsBundle\Component\DateSystem\Calculator\WeekCalculator" alias="hume_date_week_calculator" />
     </services>
 </container>

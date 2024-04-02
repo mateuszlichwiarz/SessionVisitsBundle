@@ -18,7 +18,7 @@
             <argument key="$resolver" type="service" id="hume_new_or_add_visits_resolver" />
             <argument key="$repository" type="service" id="hume_visits_repository" />
             <argument key="$persister" type="service" id="hume_visits_persister" />
-            <argument key="$dateFactory" type="service" id="hume_date_system_current_date_factory" />
+            <argument key="$dateFactory" type="service" id="hume_date_factory" />
         </service>
 
         <service id="hume_session_register" class="Hume\SessionVisitsBundle\Component\VisitsTracker\Session\SessionRegister">
