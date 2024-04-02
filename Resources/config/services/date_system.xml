@@ -8,7 +8,7 @@
         <service id="hume_date_factory" class="Hume\SessionVisitsBundle\Component\DateSystem\Factory\DateFactory">
             <argument key="$weekCalculator" type="service" id="hume_date_week_calculator"/>
         </service>
-        <service id="Hume\SessionVisitsBundle\Component\DateSystem\\Factory\DateFactory" alias="hume_date_factory" />
+        <service id="Hume\SessionVisitsBundle\Component\DateSystem\Factory\DateFactory" alias="hume_date_factory" />
 
         <service id="hume_date_week_calculator" class="Hume\SessionVisitsBundle\Component\DateSystem\Calculator\WeekCalculator" />
         <service id="Hume\SessionVisitsBundle\Component\DateSystem\Calculator\WeekCalculator" alias="hume_date_week_calculator" />
