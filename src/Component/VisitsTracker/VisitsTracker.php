@@ -7,11 +7,10 @@ namespace Hume\SessionVisitsBundle\Component\VisitsTracker;
 use Hume\SessionVisitsBundle\Component\VisitsTracker\Session\SessionRegister;
 use Hume\SessionVisitsBundle\Component\VisitsTracker\Resolver\NewOrAddVisitsResolver;
 use Hume\SessionVisitsBundle\Component\VisitsTracker\Persister\VisitsPersister;
-use Hume\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
+use Hume\SessionVisitsBundle\Component\DateSystem\Factory\DateFactory;
+use Hume\SessionVisitsBundle\Component\DateSystem\Model\Date;
 use Hume\SessionVisitsBundle\Repository\VisitsRepository;
-
 use Hume\SessionVisitsBundle\Entity\Visits;
-use Hume\SessionVisitsBundle\Entity\Date;
 
 class VisitsTracker
 {
@@ -24,7 +23,7 @@ class VisitsTracker
         private NewOrAddVisitsResolver $resolver,
         private VisitsRepository $repository,
         private VisitsPersister $persister,
-        private CurrentDateFactory $dateFactory,
+        private DateFactory $dateFactory,
     ){
         $this->date = $this->dateFactory->create();
         $this->visits = $this->repository->findOneVisitsObjectByDate($this->date);
