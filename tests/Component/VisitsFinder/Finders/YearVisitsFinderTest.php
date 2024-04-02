@@ -6,7 +6,7 @@ namespace Hume\SessionVisitsBundle\Tests\Component\VisitsFinder\Finders;
 
 use Hume\SessionVisitsBundle\Tests\Component\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
 
-use Hume\SessionVisitsBundle\Entity\Date;
+use  Hume\SessionVisitsBundle\Component\DateSystem\Model\Date;
 use Hume\SessionVisitsBundle\Factory\CustomDateFactory;
 
 use Hume\SessionVisitsBundle\Component\VisitsFinder\Factory\YearVisitsFinderFactory;

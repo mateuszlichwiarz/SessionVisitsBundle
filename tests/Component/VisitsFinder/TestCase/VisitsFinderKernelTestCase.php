@@ -8,7 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
 use Hume\SessionVisitsBundle\Repository\VisitsRepository;
 
-use Hume\SessionVisitsBundle\Component\DateSystem\dateSystemInterface;
+use Hume\SessionVisitsBundle\Component\DateSystem\DateSystemInterface;
 
 abstract class VisitsFinderKernelTestCase extends KernelTestCase
 {
@@ -16,12 +16,12 @@ abstract class VisitsFinderKernelTestCase extends KernelTestCase
 
     protected VisitsRepository $visitsRepository;
 
-    protected dateSystemInterface $dateSystem;
+    protected DateSystemInterface $dateSystem;
 
     public function setUp(): void
     {
         self::bootKernel();
-        $this->dateSystem = self::getContainer()->get(dateSystemInterface::class);
+        $this->dateSystem = self::getContainer()->get(DateSystemInterface::class);
         $this->setUpVisitsRepository();
         $this->setUpVisitsCollection();
     }

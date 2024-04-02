@@ -6,7 +6,7 @@ namespace Hume\SessionVisitsBundle\Tests\Component\VisitsFinder;
 
 use Hume\SessionVisitsBundle\Tests\Component\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
 
-use Hume\SessionVisitsBundle\Entity\Date;
+use  Hume\SessionVisitsBundle\Component\DateSystem\Model\Date;
 
 use Hume\SessionVisitsBundle\Component\VisitsFinder\VisitsFinderInterface;
 use Hume\SessionVisitsBundle\Entity\Visits;
