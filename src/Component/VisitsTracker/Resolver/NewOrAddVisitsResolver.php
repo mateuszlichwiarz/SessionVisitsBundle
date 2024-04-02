@@ -7,7 +7,7 @@ namespace Hume\SessionVisitsBundle\Component\VisitsTracker\Resolver;
 use Hume\SessionVisitsBundle\Component\VisitsTracker\Factory\VisitsFactoryInterface;
 
 use Hume\SessionVisitsBundle\Entity\Visits;
-use Hume\SessionVisitsBundle\Entity\Date;
+use  Hume\SessionVisitsBundle\Component\DateSystem\Model\Date;
 
 class NewOrAddVisitsResolver
 {

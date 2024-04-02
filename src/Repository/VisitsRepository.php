@@ -8,7 +8,7 @@ use Hume\SessionVisitsBundle\Entity\Visits;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
-use Hume\SessionVisitsBundle\Entity\Date;
+use  Hume\SessionVisitsBundle\Component\DateSystem\Model\Date;
 
 /**
  * @extends ServiceEntityRepository<Visits>

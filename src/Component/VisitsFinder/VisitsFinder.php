@@ -7,7 +7,7 @@ use Hume\SessionVisitsBundle\Entity\Visits;
 use Hume\SessionVisitsBundle\Component\VisitsFinder\Factory\VisitsFinderFactoryInterface;
 use Hume\SessionVisitsBundle\Component\VisitsFinder\VisitsFinderInterface;
 
-use Hume\SessionVisitsBundle\Entity\Date;
+use  Hume\SessionVisitsBundle\Component\DateSystem\Model\Date;
 
 class VisitsFinder implements VisitsFinderInterface
 {

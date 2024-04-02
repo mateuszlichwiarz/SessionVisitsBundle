@@ -7,7 +7,7 @@ namespace Hume\SessionVisitsBundle\Tests\Component\VisitsFinder\Factory;
 use Hume\SessionVisitsBundle\Tests\Component\VisitsFinder\TestCase\VisitsFinderKernelTestCase;
 
 use Hume\SessionVisitsBundle\Component\DateSystem\Factory\CurrentDateFactory;
-use Hume\SessionVisitsBundle\Entity\Date;
+use  Hume\SessionVisitsBundle\Component\DateSystem\Model\Date;
 
 use Hume\SessionVisitsBundle\Component\VisitsFinder\Factory\WeekVisitsFinderFactory;
 use Hume\SessionVisitsBundle\Component\VisitsFinder\Finders\WeekVisitsFinder;

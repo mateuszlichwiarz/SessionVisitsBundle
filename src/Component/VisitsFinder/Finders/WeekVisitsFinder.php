@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Hume\SessionVisitsBundle\Component\VisitsFinder\Finders;
 
 use Hume\SessionVisitsBundle\Component\VisitsFinder\Finders\Interface\OneResultVisitsFinderInterface as VisitsFinderInterface;
-use Hume\SessionVisitsBundle\Entity\Date;
+use  Hume\SessionVisitsBundle\Component\DateSystem\Model\Date;
 use Hume\SessionVisitsBundle\Entity\Visits;
 
 final class WeekVisitsFinder implements VisitsFinderInterface

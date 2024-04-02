@@ -6,7 +6,7 @@ namespace Hume\SessionVisitsBundle\Component\VisitsFinder\Finders;
 
 use Hume\SessionVisitsBundle\Component\VisitsFinder\Finders\Interface\ManyResultsVisitsFinderInterface as VisitsFinderInterface;
 
-use Hume\SessionVisitsBundle\Entity\Date;
+use  Hume\SessionVisitsBundle\Component\DateSystem\Model\Date;
 
 final class YearVisitsFinder implements VisitsFinderInterface
 {
