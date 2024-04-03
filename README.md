@@ -67,7 +67,7 @@ And that's it! Your controller is listened by VisitsTracker subscriber kernel.co
 #
 #
 > [!TIP]
-> If you want more about how exactly events listners and subscribers works check this out:
+> If you want more about events listners and subscribers check this out:
 > https://symfony.com/doc/current/event_dispatcher.html
 #
 #
