@@ -13,14 +13,14 @@ Bundle track visits, process and store week, month, year visits in database.
 #
 #
 > [!WARNING]
-> At this moment it's only sandbox in which I throw my new skills and ideas so I don't recommend use it in production.
+> At this moment it's only sandbox in which I throw my new skills and ideas so I don't recommend use bundle in production.
 
 #
 #
 
 ## Installation
 
-SessionVisitsBundle requires [php8.2](https://www.php.net/), [Symfony7](https://www.symfony.com/), [Doctrine-bundle2.12](https://www.php.net/) to run.
+SessionVisitsBundle require [php8.2](https://www.php.net/), [Symfony7](https://www.symfony.com/), [Doctrine-bundle2.12](https://www.php.net/) to run.
 Make sure Composer is installed on your machine.
 
 You can install it via Composer:
@@ -37,7 +37,7 @@ Hume\SessionVisitsBundle\HumeSessionVisitsBundle::class => ['dev' => true, 'test
 ```
 #
 > [!NOTE]
-> Or just set ['all' => true] if for anybody it useful in production but as I said it is not recommended.
+> set ['all' => true] for production but as I said, is not recommended.
 #
 #
 
@@ -72,8 +72,8 @@ And that's it! Your controller is listened by VisitsTracker subscriber kernel.co
 #
 #
 
-### Or DI
-Classic dependency injection:
+### Or constructor injection
+
 ``` php
 <?php
 // src/Controller/ExampleController.php
